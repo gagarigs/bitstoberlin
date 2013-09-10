@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/ico/favicon.png">
+
+    <title>Bits to Berlin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/timeline/timeline.css" rel="stylesheet">
+    
+
+    <!-- JS -->
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+    <!-- BEGIN TimelineJS -->
+    <script type="text/javascript" src="/assets/js/timeline/storyjs-embed.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            createStoryJS({
+                type:       'timeline',
+                width:      '100%',
+                height:     '100%',
+                start_at_slide:     '0',
+                start_zoom_adjust:  '0',
+                hash_bookmark:      false,   
+                source:     'timeline.json',
+                embed_id:   'timeline-embed',
+                debug:      true,
+                css:                '/assets/css/timeline/timeline.css',
+                js:                 '/assets/js/timeline/timeline.js'
+            });
+        });
+    </script>    
+  </head>
+
+  <body>
+
+    <div id="timeline-embed"></div> 
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
