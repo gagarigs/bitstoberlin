@@ -27,6 +27,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/blog', routes.blog);
 
 
 http.createServer(app).listen(app.get('port'), function(){
